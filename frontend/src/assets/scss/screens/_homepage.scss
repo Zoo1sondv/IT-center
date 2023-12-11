@@ -1,0 +1,17 @@
+.homepage {
+  background-image: url('../../img/background.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  cursor: url('../../img/cursor.png'), auto !important;
+
+  & a:-webkit-any-link,
+  & button {
+    cursor: url('../../img/cursor.png'), auto !important;
+  }
+
+  & .bg-custom-dark:hover {
+    background-color: #212529;
+    border-radius: 8px;
+  }
+}

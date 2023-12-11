@@ -1,0 +1,31 @@
+.tags-popular {
+  background: white;
+  border-radius: 8px;
+
+  &__title {
+    font-weight: 500;
+    color: #000000;
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(135deg, #ef5350 0%, #ffca28 100%);
+    padding: 8px 16px;
+  }
+  &__list {
+    height: 230px;
+    overflow-y: scroll;
+
+    &__item {
+      display: flex;
+      align-items: flex-end;
+      margin: 6px 8px;
+
+      &--count {
+        font-size: 12px;
+      }
+    }
+
+    &__item:hover {
+      opacity: 0.7;
+      color: #42a5f5;
+    }
+  }
+}

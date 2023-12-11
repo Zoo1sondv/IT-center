@@ -1,0 +1,36 @@
+.menu-pages {
+  a:hover {
+    color: #42a5f5 !important;
+  }
+}
+
+.menu-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  background-color: #e9ecef;
+
+  .tabs {
+    display: flex;
+
+    &__tab {
+      padding: 8px 16px;
+
+      & > a {
+        text-decoration: none;
+        color: #575757;
+        font-weight: 500;
+      }
+
+      & > a:hover {
+        color: #42a5f5;
+      }
+
+      &--active {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

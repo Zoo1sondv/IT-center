@@ -1,0 +1,85 @@
+.card-playlist {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  min-height: 398px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: #42a5f5 0px 0px 12px 0px;
+  }
+
+  & > img {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #e9e5e5;
+  }
+
+  .content {
+    padding: 8px 16px;
+
+    &__title,
+    &__description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__extend {
+      margin: 0 -16px;
+
+      &__count {
+        display: flex;
+        align-items: center;
+        background-color: #fbfbfc;
+        padding: 8px 16px;
+      }
+      &__author {
+        display: flex;
+        padding: 8px 16px;
+        align-items: center;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 16px;
+
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.playlist {
+  height: 350px;
+  overflow-y: scroll;
+
+  &__lesson,
+  &__filter {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+  &__lesson:hover,
+  &__filter:hover {
+    color: #42a5f5;
+    background-color: #e9e5e5;
+  }
+}

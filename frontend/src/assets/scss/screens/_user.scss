@@ -1,0 +1,44 @@
+.user-info {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #d262e3 0%, #42a5f5 100%) !important;
+  height: max-content;
+  padding: 32px;
+  margin: 8px;
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 8px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.account-info {
+  &__item {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+
+    & > div {
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &.active {
+      color: #42a5f5;
+
+      & > div {
+        background-color: #2d3238;
+      }
+    }
+  }
+}
