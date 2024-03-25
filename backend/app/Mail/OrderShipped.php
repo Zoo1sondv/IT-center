@@ -32,7 +32,7 @@ class OrderShipped extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('khangntk09@gmail.com', 'Group_161'),
+            from: new Address('2001.sondv@gmail.com', 'it_center'),
             subject: 'Order Shipped',
         );
     }
