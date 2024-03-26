@@ -14,11 +14,3 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
 WORKDIR /var/www/app
-
-# Run additional commands
-RUN composer install \
-    && php artisan key:generate \
-    && php artisan migrate \
-    && php artisan passport:install \
-    && php artisan passport:keys \
-    && chmod -R 0777 storage
