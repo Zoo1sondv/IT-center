@@ -1,25 +1,25 @@
 version: "3.8"
 services:
-
     # PHP service
     app:
         build: .
-        container_name: php-app
+        container_name: php-it-center
         working_dir: /var/www/app
         volumes:
             - ./:/var/www/app
         networks:
             - app-network
+        links:
+            - db
     db:
-        image: mysql:8.0.29
-        container_name: mysql-db
+        image: postgres:12
+        container_name: postgres-db
         ports:
-            - "3308:3306"
+            - "5433:5432"
         environment:
-            MYSQL_ROOT_PASSWORD: Group_161
-            MYSQL_DATABASE: act-learning
-            MYSQL_USER: act
-            MYSQL_PASSWORD: Group_161
+            POSTGRES_DB: ${POSTGRES_DB:-itcenter}
+            POSTGRES_USER: ${POSTGRES_USER:-itcenter}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
         networks:
             - app-network
 

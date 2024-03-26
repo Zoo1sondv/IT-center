@@ -159,7 +159,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className="mb-10">
-            <span>ITCenter by Sondv & NTKhang © 2022</span>
+            <span>ITCenter by Sondv © 2022</span>
           </div>
         </div>
       </div>

@@ -95,7 +95,7 @@ function UserInfoAccount() {
                       name="email"
                       type="email"
                       className="form-control fs-5"
-                      value={userInfo.email}
+                      value={userInfo?.email || ''}
                       disabled
                     />
                   </div>
@@ -112,7 +112,7 @@ function UserInfoAccount() {
                       name="username"
                       type="text"
                       className="form-control fs-5"
-                      value={userInfo.name}
+                      value={userInfo?.name || ''}
                       disabled
                     />
                   </div>
@@ -129,7 +129,7 @@ function UserInfoAccount() {
                       name="username"
                       type="date"
                       className="form-control fs-5"
-                      value={userInfo.birth_date}
+                      value={userInfo?.birth_date || ''}
                       disabled
                     />
                   </div>
@@ -146,7 +146,7 @@ function UserInfoAccount() {
                       name="username"
                       type="text"
                       className="form-control fs-5"
-                      value={userInfo.birth_date === 1 ? 'nữ' : 'nam'}
+                      value={userInfo?.birth_date === 1 ? 'nữ' : 'nam'}
                       disabled
                     />
                   </div>
@@ -163,7 +163,7 @@ function UserInfoAccount() {
                       name="username"
                       type="text"
                       className="form-control fs-5"
-                      value={userInfo.phone}
+                      value={userInfo?.phone}
                       disabled
                     />
                   </div>

@@ -1,4 +1,4 @@
-### `Coppy file .env.example => .env`
+### `Copy file .env.example => .env`
 ### `FRONT_URL= trong .env là frontend url`
 
 ### `Chạy cái này đầu tiên để build lần đầu`
