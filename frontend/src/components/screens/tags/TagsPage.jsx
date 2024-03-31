@@ -39,7 +39,7 @@ function TagsPage({ onSubmit }) {
               <Link
                 to={`/tags/${tag.name}?tab=question`}
                 onClick={() => onSubmit(tag.name)}
-                className="btn btn-warning text-decoration-none text-nowrap py-0 px-2 me-2">
+                className="btn btn-warning text-decoration-none py-0 px-2 me-2">
                 Tag: {tag.name}
               </Link>
               <div className="d-flex flex-column justify-content-center align-items-center p-2">

@@ -194,7 +194,7 @@ function HeaderHomePage({ className }) {
             <li>
               <Link
                 className="dropdown-item d-flex align-items-center"
-                to="/series/create">
+                to="/documentation">
                 <ListOutlinedIcon className="me-2" /> Tạo series
               </Link>
             </li>

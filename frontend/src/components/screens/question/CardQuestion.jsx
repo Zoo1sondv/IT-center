@@ -36,13 +36,13 @@ function CardQuestion({ data = [], onSubmit }) {
           <Link
             to={`/question/${item.id}`}
             onClick={() => onSubmit(item.title)}
-            className="text-dark fw-bold text-decoration-none text-nowrap">
+            className="text-dark fw-bold text-decoration-none">
             <span>{item.title}</span>
           </Link>
           <div>
             <Link
               to={`/tags/${item.tag.name}?tab=question`}
-              className="btn btn-warning text-decoration-none text-nowrap py-0 px-2 me-2">
+              className="btn btn-warning text-decoration-none py-0 px-2 me-2">
               {item.tag.name}
             </Link>
           </div>

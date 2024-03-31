@@ -18,7 +18,9 @@ function Sidebar() {
     <div className="sidebar-width">
       <div className="sidebar">
         <div className="sidebar__avatar">
-          <Link to="/users/id">
+          <Link
+            to="/users/id"
+            className="d-flex flex-column justify-content-center align-items-center">
             <img
               src={require('@assets/img/avatar.png')}
               alt="avatar"

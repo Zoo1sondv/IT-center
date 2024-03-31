@@ -41,8 +41,8 @@ function QuestionPage({ valueSearch, valueFilter, onSubmit }) {
   }, [getAllQuestion]);
 
   return (
-    <div className="d-flex flex-wrap mt-4">
-      <div className="col-12 col-lg-9">
+    <div className="d-flex flex-sm-column-reverse flex-lg-row flex-wrap mt-4">
+      <div className="col-sm-12 col-lg-9">
         <div className="m-1">
           <CreateBox title="câu hỏi" />
           {questionData && questionData.length > 0 ? (
@@ -54,7 +54,7 @@ function QuestionPage({ valueSearch, valueFilter, onSubmit }) {
           )}
         </div>
       </div>
-      <div className="col-12 col-lg-3">
+      <div className="col-sm-12 col-lg-3">
         <div className="m-1">
           <TagsPopular data={tagData} />
         </div>

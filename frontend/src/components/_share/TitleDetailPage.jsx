@@ -45,7 +45,7 @@ function TitleDetailPage({ data }) {
         <div>
           <Link
             to={`/tags/${data.tag.name}?tab=question`}
-            className="btn btn-warning text-decoration-none text-nowrap py-0 px-2 me-2">
+            className="btn btn-warning text-decoration-none py-0 px-2 me-2">
             #{data.tag.name}
           </Link>
         </div>

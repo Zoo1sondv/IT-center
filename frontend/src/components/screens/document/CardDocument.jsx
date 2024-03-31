@@ -30,12 +30,12 @@ function CardDocument({ data = [], onSubmit }) {
           <Link
             to={`/documentation/${item.id}`}
             onClick={() => onSubmit(item.title)}
-            className="text-dark fw-bold text-decoration-none text-nowrap pe-2">
+            className="text-dark fw-bold text-decoration-none pe-2">
             <span>{item.title}</span>
           </Link>
           <Link
             to={`/tags/${item.tag.name}?tab=document`}
-            className="btn btn-warning text-decoration-none text-nowrap py-0 px-2 me-2">
+            className="btn btn-warning text-decoration-none py-0 px-2 me-2">
             {item.tag.name}
           </Link>
         </div>

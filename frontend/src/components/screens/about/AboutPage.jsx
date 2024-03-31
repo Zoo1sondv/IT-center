@@ -23,7 +23,7 @@ function AboutPage() {
       <div className="mt-4">
         <h3 className="text-center text-dark fw-bold my-5">Người sáng lập</h3>
         <div className="d-flex flex-wrap align-items-center justify-content-center">
-          <div className="col-sm-3">
+          <div className="col-sm-6 col-lg-4 col-xl-3">
             <div className="mx-4">
               <div className="about-page__img">
                 <img src={require('@assets/img/avatar.png')} alt="avatar" />
