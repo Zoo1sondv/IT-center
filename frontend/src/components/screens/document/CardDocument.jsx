@@ -44,7 +44,7 @@ function CardDocument({ data = [], onSubmit }) {
           <Link
             to={`/documentation/${item.id}`}
             className="text-secondary text-decoration-none pe-2">
-            <span className="fs-14">{item.content}</span>
+            <span className="fs-14 text-truncate-custom">{item.content}</span>
           </Link>
         </div>
 

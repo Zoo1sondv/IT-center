@@ -53,3 +53,12 @@
 .w-230px {
   width: 230px;
 }
+
+.text-truncate-custom {
+  line-height: 1.4rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: calc(3 * 1.5em);
+}
