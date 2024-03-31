@@ -30,8 +30,9 @@ class QaController extends Controller
     {
         $tag = Tag::where('name', $request->tag)->first();
         if (!$tag) {
-            $tag = Tag::create(['name' => $request->tag])->id;
+            $tag = Tag::create(['name' => $request->tag]);
         }
+
         $tagId = $tag->id;
         Qa::create([
             'title' => $request->title,
@@ -41,7 +42,7 @@ class QaController extends Controller
         ]);
 
         $tagTotal = $tag->total;
-        Tag::where('id', $tagId)->update(['total' => $tagTotal+1]);
+        Tag::where('id', $tagId)->update(['total' => $tagTotal + 1]);
 
         return response()->json([
             'message' => 'Create QA successfully',
