@@ -16,3 +16,46 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Ignore vendor directory
+/vendor
+
+# Ignore node modules
+/node_modules
+
+# Ignore IDE files
+.idea
+.phpstorm.meta.php
+
+# Ignore environment configuration
+.env
+
+# Ignore log files
+/storage/logs/*.log
+
+# Ignore session files
+/storage/framework/sessions/*
+
+# Ignore compiled views
+/storage/framework/views/*
+
+# Ignore user-specific Laravel config files
+/config/*.php
+
+# Ignore public storage directory
+/public/storage
+
+# Ignore Mix-manifest file
+/public/mix-manifest.json
+
+# Ignore the Homestead environment file
+Homestead.yaml
+
+# Ignore Homestead after init script
+Homestead.json
+
+# Ignore environment variables file
+/.env
+
+# Ignore any npm dependencies
+npm-debug.log
