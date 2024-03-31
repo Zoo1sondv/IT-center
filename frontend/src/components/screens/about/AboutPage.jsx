@@ -23,7 +23,6 @@ function AboutPage() {
       <div className="mt-4">
         <h3 className="text-center text-dark fw-bold my-5">Người sáng lập</h3>
         <div className="d-flex flex-wrap align-items-center justify-content-center">
-          <div className="col-sm-3"></div>
           <div className="col-sm-3">
             <div className="mx-4">
               <div className="about-page__img">
@@ -58,41 +57,6 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="col-sm-3">
-            <div className="mx-4">
-              <div className="about-page__img">
-                <img src={require('@assets/img/avatar.png')} alt="avatar" />
-              </div>
-              <div className="about-page__info">
-                <h5 className="about-page__info__name">Nguyễn Thịnh Khang</h5>
-                <div className="about-page__info__desc">
-                  Thiết kế database - Phụ trách backend
-                </div>
-              </div>
-              <div className="about-page__contact">
-                <div className="text-truncate">
-                  <FacebookOutlinedIcon
-                    style={{ fontSize: '36px' }}
-                    className="me-2"
-                  />
-                  <Link
-                    to="https://www.facebook.com/doansonbn"
-                    target="_blank"
-                    className="text-decoration-none text-info">
-                    fb.com/nguyenthinhkhang
-                  </Link>
-                </div>
-                <div className="text-truncate mt-2">
-                  <LocalPhoneOutlinedIcon
-                    style={{ fontSize: '36px' }}
-                    className="me-2"
-                  />
-                  (+84) 347 200 123
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-3"></div>
         </div>
       </div>
 
