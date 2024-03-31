@@ -9,7 +9,7 @@
 
 # Build first
 
-- b1: `copy .env.example .env`
+- b1: `cp .env.example .env`
 - b2: `docker-compose up -d --build`
 - b3: `docker-compose exec app sh`
 - b4: `composer install`

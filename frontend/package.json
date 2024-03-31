@@ -17,6 +17,7 @@
     ]
   },
   "scripts": {
+    "serve": "serve -s build",
     "start": "env-cmd -f .env.dev react-app-rewired start",
     "build:dev": "env-cmd -f .env.dev react-app-rewired build",
     "build:test": "env-cmd -f .env.test react-app-rewired build",
@@ -76,6 +77,7 @@
     "react-slick": "^0.29.0",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.4.1",
+    "serve": "^14.2.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
