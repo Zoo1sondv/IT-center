@@ -16,7 +16,7 @@ const constantKeys = {
   ),
   URL_API_YOUTUBE: 'https://www.googleapis.com/youtube/v3/',
   KEY_API_YOUTUBE: 'AIzaSyDG86xggEDaitlzs36zHBck4yfRyWoUUkw',
-  MAX_RESULT_YOUTUBE: 8,
+  MAX_RESULT_YOUTUBE: 9,
 };
 
 export default constantKeys;
